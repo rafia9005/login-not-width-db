@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Sederhana Dengan Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Selamat Datang Di SatriaAI</h1>
+            <form name="login">
+                <input type="text" name="username" id="username" placeholder="Input Your Token">
+                <br>
+                <button class="input-button" type="button" onClick="Login()">Masuk</button>
+            </form>
+        </div>
+        <main>
+            <p>Beli Token ? <a href="https://wa.me/6285174195455" onclick="alert('Terimakasih telah menghubungi admin')">Beli di sini</a></p>
+        </main>
+        <center>
+            <small>Copyright @2023 by SatriaAi. All Reverd</small>
+        </center>
+    </div>
+    <script>
+        function Login() {
+            var done = 0;
+            var username = document.login.username.value;
+            username = username.toLowerCase();
+            if (username == "satriaaivip") {
+                window.location.href = "home";
+            } else
+                if (done == 0) {
+                    alert('Your Token Invalid')
+                }
+        }
+    </script>
+</body>
+
+</html>
